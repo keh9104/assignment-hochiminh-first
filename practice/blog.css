@@ -1,0 +1,47 @@
+.cards {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 2rem;
+}
+
+.jumbotron {
+  background-image: url(https://cdn.pixabay.com/photo/2015/09/17/17/25/code-944499_1280.jpg);
+  margin: 1rem 10rem 1rem 10rem;
+}
+.display-4 {
+  font-family: "Do Hyeon", sans-serif;
+  color: white;
+  text-align: center;
+  text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+  -moz-text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+  -webkit-text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+}
+.lead {
+  font-family: "Do Hyeon", sans-serif;
+
+  color: white;
+  text-align: center;
+  text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+  -moz-text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+  -webkit-text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+}
+.jumbotron p {
+  font-family: "Do Hyeon", sans-serif;
+
+  color: white;
+  text-align: center;
+  text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+  -moz-text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+  -webkit-text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+}
+.pagination {
+  justify-content: center;
+  margin-top: 1rem;
+}
+.content {
+  background-color: #efe9f6;
+}
+.card {
+  outline: solid 1px black;
+  margin-bottom: 2rem;
+}

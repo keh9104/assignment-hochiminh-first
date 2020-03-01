@@ -1,0 +1,44 @@
+body {
+  font-family: "Jua", sans-serif;
+  background-color: #fddfa6;
+}
+h1#name {
+  color: #074687;
+}
+.all {
+  width: 300px;
+  margin: 0 auto;
+  background-color: white;
+  border-style: double;
+}
+.name {
+  width: 170px;
+  margin: 0 auto;
+}
+.pic {
+  width: 300px;
+  margin: 0 auto;
+}
+.email {
+  width: 300px;
+  margin: 0 auto;
+}
+.pr {
+  width: 300px;
+  margin: 0 auto;
+}
+.careers {
+  width: 300px;
+  margin: 0 auto;
+}
+.sns {
+  width: 300px;
+  margin: 0 auto;
+}
+.form {
+  width: 300px;
+  margin: 0 auto;
+}
+.fa-facebook-square {
+  font-size: 1.5rem;
+}
