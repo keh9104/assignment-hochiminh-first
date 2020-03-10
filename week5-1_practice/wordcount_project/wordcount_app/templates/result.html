@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>당신이 입력한 문장 "{{textcount}}</h1>
+    <h3>Input Text</h3>
+    <h2>{{text}}</h2>
+    <h3>Word Count</h3>
+    {% for key, value in dic.items %}
+    <div>
+      <h4>{{key}}:{{value}}</h4>
+      <br />
+    </div>
+    {% endfor %}
+    <a href="{% url 'home' %}">Try Again</a>
+  </body>
+</html>

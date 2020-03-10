@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>워드 카운터</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{% static 'home.css' %}?v=0.81"
+    />
+  </head>
+  <body>
+    <h1>워드 카운터</h1>
+    <form action="{% url 'result' %}" method="get">
+      <textarea
+        name="fulltext"
+        id=""
+        cols="60"
+        rows="10"
+        placeholder="문장을 입력하세요"
+      ></textarea>
+      <input type="submit" value="결과" />
+    </form>
+  </body>
+</html>

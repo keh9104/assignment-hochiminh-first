@@ -2,7 +2,7 @@ import requests
 from bs4 import BeautifulSoup
 
 url = 'https://search.naver.com/search.naver?where=nexearch&sm=tab_etc&query='
-query = input('띠를 입력하세요(쥐, 소, 호랑이, 토끼, 용, 뱀, 말, 양, 원숭이, 닭, 개, 돼지): ')
+query = input('오늘의 운세! *띠를 입력하세요(쥐, 소, 호랑이, 토끼, 용, 뱀, 말, 양, 원숭이, 닭, 개, 돼지): ')
 lasturl = '띠%20운세'
 
 fullurl = url + query + lasturl

@@ -1,0 +1,12 @@
+h1 {
+  text-align: center;
+}
+
+form {
+  text-align: center;
+}
+
+textarea {
+  border: solid 1px black;
+  margin-left: 50px;
+}

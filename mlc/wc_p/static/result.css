@@ -1,0 +1,9 @@
+body {
+  margin-left: 1rem;
+  background-color: white;
+}
+
+span {
+  padding: 0.5rem;
+  border: double;
+}

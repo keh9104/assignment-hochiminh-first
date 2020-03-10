@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>워드 카운터</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'result.css' %}" />
+  </head>
+  <body>
+    <h1>입력한 문장의 총 단어 수 "{{textcount}}"</h1>
+    <br />
+    <h3>입력한 문장</h3>
+    <textarea cols="60" rows="10">{{text}}</textarea>
+    <br />
+    <h3>단어 수</h3>
+    {% for key, value in dic.items %}
+    <div>
+      <h4>{{key}}:{{value}}</h4>
+      <br />
+    </div>
+    {% endfor %}
+    <a href="{% url 'home' %}">다시 하기</a>
+  </body>
+</html>
