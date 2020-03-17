@@ -1,0 +1,28 @@
+{% extends 'base.html' %} {% block content %}
+
+<h2><span>제목:</span>{{post.title}}</h2>
+<h4>
+  <span>내용</span>
+  <br />
+
+  {{post.contents}}
+</h4>
+<br />
+{% for com in post.comment.all %}
+<li>
+  {{com.content}}
+  <a href="{% url 'delete_comment' post.pk com.pk %}"
+    ><i class="fas fa-trash-alt"></i
+  ></a>
+</li>
+{% endfor %}
+<br />
+<form method="POST">
+  {% csrf_token %} {{form.as_p}}
+  <input type="submit" value="comment" />
+</form>
+<br />
+<a href="{% url 'home' %}"><i class="fas fa-home fa-2x"></i></a>
+<a href="{% url 'edit' post.pk %}"><i class="fas fa-edit fa-2x"></i></a>
+<a href="{%url 'delete' post.pk  %}"><i class="fas fa-trash-alt fa-2x"></i></a>
+{% endblock %}
