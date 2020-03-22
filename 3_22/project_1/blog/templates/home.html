@@ -1,0 +1,19 @@
+{% extends 'base.html' %} {% block content %}
+<br />
+<h1>나의 블로그</h1>
+<br />
+{% for post in posts %}
+<li>
+  <a href="{% url 'detail' post.pk %}">
+    {% if post.img %}
+    <img src="{{post.img.url}}" alt="썸네일 사진" style="max-width: 200px;" />
+    {% endif %} {{post.title}}
+  </a>
+</li>
+{% endfor %}
+<br />
+<a href="{% url 'new' %}"><button>글쓰기</button></a>
+<br />
+<br />
+
+{% endblock %}
