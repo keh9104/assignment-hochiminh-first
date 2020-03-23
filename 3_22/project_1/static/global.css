@@ -1,0 +1,14 @@
+.navbar {
+  background-color: black;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.nav_home {
+  justify-self: flex-start;
+  margin-right: auto;
+}
+
+.home_icon {
+  color: white;
+}

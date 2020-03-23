@@ -1,0 +1,14 @@
+{% extends 'base.html' %} {% block content %}
+<br />
+<h1>회원가입</h1>
+<br />
+<form method="POST">
+  {% csrf_token %} {{form.as_p}}
+  <button type="submit">가입 완료</button>
+</form>
+<br />
+<a href="{% url 'home' %}"><button>메인 페이지</button></a>
+<br />
+<br />
+
+{% endblock %}

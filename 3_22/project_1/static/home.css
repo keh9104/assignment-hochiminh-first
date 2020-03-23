@@ -1,0 +1,24 @@
+.home_title {
+  text-align: center;
+}
+
+.home_container {
+  text-align: center;
+  display: grid;
+  grid-template-columns: 202px 202px 202px 202px;
+  grid-gap: 2rem;
+  justify-content: center;
+}
+
+.home_content {
+  border: solid 1px;
+}
+
+.home_content img {
+  text-align: center;
+  max-width: 200px;
+}
+
+.home_posttitle {
+  text-align: center;
+}

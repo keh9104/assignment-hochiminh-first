@@ -1,16 +1,27 @@
 {% extends 'base.html' %} {% block content %}
+<p>
+  {% if user.is_authenticated %}
+  <h4>{{user.username}}님 환영합니다!</h4>
+  <!-- <a href="{% url 'logout' %}">로그아웃</a> -->
+  {% else %}
+  <!-- <h4><a href="{% url 'signup' %}">회원가입</a> 또는 <a href="{% url 'login' %}">로그인</a>하기</h4> -->
+  {% endif %}
+</p>
+
+<h1 class="home_title">§§독후감 게시판§§</h1>
 <br />
-<h1>나의 블로그</h1>
-<br />
+<div class='home_container'>
 {% for post in posts %}
-<li>
+<section class='home_content'>
   <a href="{% url 'detail' post.pk %}">
     {% if post.img %}
-    <img src="{{post.img.url}}" alt="썸네일 사진" style="max-width: 200px;" />
-    {% endif %} {{post.title}}
+    <img src="{{post.img.url}}" alt="썸네일 사진"/>
+    <br>
+    {% endif %} <span class='home_posttitle'>책 제목: {{post.title}}</span>
   </a>
-</li>
+</section>
 {% endfor %}
+</div>
 <br />
 <a href="{% url 'new' %}"><button>글쓰기</button></a>
 <br />

@@ -1,10 +1,12 @@
 from django.db import models
 from django.utils import timezone
 
+
 # Create your models here.
 
 
 class Post(models.Model):
+    author = models.CharField(max_length=50, default="")
     title = models.CharField(max_length=50)
     contents = models.TextField()
     price = models.IntegerField()
@@ -24,6 +26,7 @@ class Post(models.Model):
 
 
 class Comment(models.Model):
+    author = models.CharField(max_length=50, default="")
     post = models.ForeignKey(Post, on_delete=models.CASCADE, related_name="comments")
     content = models.TextField()
 
